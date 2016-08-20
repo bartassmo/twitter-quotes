@@ -13,6 +13,7 @@ function createTweet(input) {
         getQuote();
     } else {
         var tweet = tweetLink + tweetText;
+        encodeURIComponent(tweetText);
         $('.quote').text(input.quoteText);
         $('.author').text("Author: " + input.quoteAuthor);
         $('.tweet').attr('href', tweet);
@@ -22,5 +23,5 @@ $(document).ready(function() {
     getQuote();
     $('.trigger').on('click', function() {
         getQuote();
-    })
+    });
 });
