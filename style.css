@@ -40,7 +40,7 @@ header {
     cursor: pointer;
 }
 .twitter {
-    margin-top: 15px;
+    margin: 15px auto;
     width: 300px;
     background-color: inherit; 
     border: solid 1px;
@@ -48,7 +48,11 @@ header {
     padding: 15px 50px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     font-size: 20px;
     cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: #fff;
 }
